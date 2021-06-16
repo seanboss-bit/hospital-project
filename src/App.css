@@ -1,38 +1,92 @@
-.App {
+body {
+  background-color: #5299d3;
+  box-sizing: border-box;
+}
+.navbar .a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+}
+.navbar {
+  border-bottom: 2px solid #fff;
+}
+.navitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase {
+  height: 80vh;
+  background: url(./images/showcase.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.showcase-header {
+  color: white;
   text-align: center;
+  padding-top: 140px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.showcase-header h3 {
+  font-size: 3rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aboutus {
+  background: #fff;
+  text-align: center;
+  padding: 3rem 0;
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.physio-section {
+  background-image: url(./images/physio.jpg);
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.seanbtn {
+  border: 2px solid #5299d3 !important;
+  color: #5299d3;
+}
+.seanbtn:hover {
+  background: #5299d3;
+  color: #fff;
+}
+.sean h4 {
+  font-size: 2.5rem;
+}
+.services {
+  background: #fff;
+}
+.service-content {
+  background-image: url(./images/physio.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.service-content:nth-child(2) {
+  background-image: url(./images/showcase.jpg);
+}
+.service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 2rem 0;
+}
+.service-stuff{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px 10px;
+}
+.service-stuff h4{
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
